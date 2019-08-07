@@ -1,0 +1,8 @@
+{books:[
+ {title:"AJAX et PHP : Comment construire des applications web réactives",
+  isbn:"978-2100506842"},
+ {title:"Pratique de MySQL et PHP",
+  isbn:"978-2100523368"},
+ {title:"Tout sur le web 2.0 et 3.0, 2e édition",
+  isbn:"978-2100543427"}
+]}

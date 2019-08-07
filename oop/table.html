@@ -1,0 +1,24 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+// Tester la classe Table.
+var t = new Table(3,5);
+var cellCount = t.getCellCount();
+alert (cellCount);
+
+// Classe Table.
+function Table (rows, columns)
+{
+  // Constructeur.
+  this.rows = rows;
+  this.columns = columns;
+
+  // Méthode getCellCount.
+  this.getCellCount = function()
+  {
+    // Nombre de lignes multiplié par le nombre de colonnes.
+    return this.rows * this.columns;
+  };
+}
+
+</script>

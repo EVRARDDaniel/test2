@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <books>
+    <book>
+      <title>
+		AJAX et PHP : Comment construire des applications web réactives
+	  </title>
+      <isbn>
+		978-2100506842
+      </isbn>
+    </book>
+    <book>
+      <title>
+        Pratique de MySQL et PHP
+      </title>
+      <isbn>
+        978-2100523368
+      </isbn>
+    </book>
+    <book>
+      <title>
+        Tout sur le web 2.0 et 3.0, 2e édition
+      </title>
+      <isbn>
+		978-2100543427
+      </isbn>
+    </book>
+  </books>
+

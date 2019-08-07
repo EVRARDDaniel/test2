@@ -1,0 +1,22 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+x = 0; // Déclarer une variable globale.
+document.write(x); // Affiche "0".
+
+function BigTest()
+{
+  // Forcer la création d'une instance.
+  if (!(this instanceof BigTest)) return new BigTest();
+  
+  // Créer une propriété et afficher sa valeur.
+  this.x = 1; 
+  document.write(this.x); // Affiche "1" .
+  document.write(x); // Affiche "0".
+}
+
+BigTest(); // Simple appel de fonction.
+
+document.write(x); // Affiche "0".
+
+</script>

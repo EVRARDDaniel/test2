@@ -1,0 +1,25 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+// Classe Table.
+function Table (rows, columns)
+{
+  // Enregistrer les paramètres dans des variables locales.
+  var _rows = rows;
+  var _columns = columns;
+  // Retourner le nombre de cellules de la table.
+  this.getCellCount = function()
+  {
+    return _rows * _columns;
+  };
+}
+
+// Créer un objet Table.
+var t = new Table(3,5);
+// Afficher les valeurs des champs de l'objet.
+document.write("La table comprend " + t._rows + " lignes" +
+" et " + t._columns + " colonnes.<br />");
+// Appeler une fonction de l'objet.
+document.write("La table comprend " + t.getCellCount() + " cellules.<br />");
+
+</script>

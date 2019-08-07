@@ -1,0 +1,32 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+// Classe Table.
+function Table (rows, columns)
+{
+  // Enregistrer les paramètres dans des propriétés de classe.
+  this.rows = rows;
+  this.columns = columns;
+}
+
+// Table.getCellCount retourne le nombre de cellules de la table.
+Table.prototype.getCellCount = function()
+{
+  return this.rows * this.columns;
+};
+
+var t1 = new Table(2,3);
+// Redéfinir la méthode getCellCount prototype sur cette instance.
+t1.getCellCount = function ()
+{
+   return this.rows * this.columns + 1;
+}
+
+var t2 = new Table(3,5);
+
+// Afficher le nombre de cellules de la première table.
+alert(t1.getCellCount());
+// Afficher le nombre de cellules de la deuxième table.
+alert(t2.getCellCount());
+
+</script>

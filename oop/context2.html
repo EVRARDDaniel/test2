@@ -1,0 +1,16 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+x = 0; // Déclarer une variable globale.
+document.write(x); // Affiche "0".
+
+function BigTest()
+{
+  this.x = 1; 
+}
+
+var obj = new BigTest();
+
+document.write(x); // Affiche "0".
+
+</script>

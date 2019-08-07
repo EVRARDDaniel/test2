@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <title>Discussion AJAX</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="chat.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jQuery-1.3.2.js" ></script> 
+  <script type="text/javascript" src="chat.js" ></script> 
+  
+</head>
+  <body>
+    <noscript>
+      Votre navigateur ne prend pas en charge JavaScript !!
+    </noscript>
+    <table id="content">
+      <tr>
+        <td>
+          <div id="scroll">
+          </div>
+        </td>
+        <td id="colorpicker">
+          <img src="palette.png" id="palette" alt="Palette de couleurs" border="1"/>
+          <br />
+          <input id="color" type="hidden" readonly="true" value="#000000" />
+          <span id="sampleText">
+            (le texte aura cet aspect)
+          </span>
+        </td>
+      </tr>
+    </table>
+    <div>   
+	  <input type="text" id="userName" maxlength="10" size="10"/>
+      <input type="text" id="messageBox" maxlength="2000" size="50" />
+      <input type="button" value="Poster" id="send" />
+      <input type="button" value="Supprimer tout" id="delete" />
+    </div>
+  </body>
+</html>

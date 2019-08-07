@@ -1,0 +1,27 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+// Appel explicite à la fonction.
+ShowHelloWorld(); 
+
+// Fonction "Bonjour tout le monde" externe.
+function ShowHelloWorld()
+{
+  // Déclarer de nouvelles variables.
+  var date = new Date();
+  var hour = date.getHours();
+
+  // Appeler DisplayGreeting en passant l'heure courante en paramètre.
+  DisplayGreeting(hour);
+
+  // Fonction "affichage des salutations" interne.
+  function DisplayGreeting(hour)
+  {
+    if (hour >= 22 || hour <= 5) 
+      document.write("Bonne nuit tout le monde !");
+    else
+      document.write("Bonjour tout le monde !");
+  }
+}
+
+</script>                      

@@ -1,0 +1,36 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<script>
+
+// Créer une instance de classe.
+var myHello = new HelloWorld();
+
+// Appeler une méthode.
+myHello.DisplayGreeting();
+
+// Classe "Bonjour tout le monde".
+function HelloWorld(hour)
+{
+  // Le "constructeur" de la classe initialise le champ this.hour.
+  if (hour)
+  {
+    // Si le paramètre hour a une valeur, la placer dans le champ de la classe.
+    this.hour = hour;
+  }
+  else
+  {
+    // Si le paramètre hour n'existe pas, enregistrer l'heure actuelle.
+    var date = new Date();
+    this.hour = date.getHours();
+  }
+
+  // Fonction d'affichage des salutations.
+  this.DisplayGreeting = function()
+  {
+    if (this.hour >= 22 || this.hour <= 5)
+      document.write("Bonne nuit tout le monde !");
+    else
+      document.write("Bonjour tout le monde !");
+  }
+}
+
+</script>
